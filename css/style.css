@@ -163,5 +163,18 @@ html {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
+  background: #F2F2F2;
+  text-align: center;
+}
+
+.header {
+  padding: 4.6rem 2.4rem 0;
+  background: url(../assets/home/bg-pattern-header.svg) no-repeat top/cover;
+  background-position-y: -130px;
+}
+
+.header__hero-image {
+  width: 52.3%;
+  margin-top: 8rem;
 }
 /*# sourceMappingURL=style.css.map */

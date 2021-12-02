@@ -2,7 +2,9 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background: $background-body;
+    background:url(../assets/home/bg-pattern-header.svg) no-repeat top/contain, $background-body;
+    background-size: 458px;
+    background-position-y: -170px;
     text-align: center;
     position: relative;
 }
@@ -14,8 +16,6 @@ p {
 
 .header {
     padding: 4.6rem 2.4rem 0;
-    background:url(../assets/home/bg-pattern-header.svg) no-repeat top/cover;
-    background-position-y: -130px;
     margin-bottom: 5rem;
 
     &__hero-image {
@@ -43,6 +43,10 @@ p {
         color: $color-paragraph-dark;
         line-height: 2.6rem;
         margin-bottom:2.4rem;
+    }
+
+    &__sign-up {
+        margin-bottom: 6.4rem;
     }
 }
 
@@ -148,10 +152,9 @@ p {
     background-size: 1200px;
     background-position-y: -1030px;
     padding: 89.4rem 2.4rem 0;
+}
 
-    &__container {
-        color: white;
-    }
+.countdown {
 
     &__date {
         font-weight: 700;
@@ -159,34 +162,57 @@ p {
         letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 1.8rem;
+        color: $Dark-gray;
+    }
+
+    &__date--light {
+        color: white;
     }
 
     &__date--accent {
         color: $Blue;  
     }
 
-    &__countdown-wrapper {
+    &__block {
         display: flex;
         justify-content: space-between;
         margin-bottom: 4rem;
     }
 
-    &__countdown {
+    &__wrapper {
         background:$background-countdown;
         border-radius: 4px;
         width: 7.2rem;
         padding: 1.1rem 0 1rem;
     }
 
-    &__countdown-number {
+    &__wrapper--light {
+        background:rgba(81, 117, 255, 0.1)
+    }
+
+    &__number {
         font-size: 3.2rem;
         line-height: 4.8rem;
     }
 
-    &__countdown-scale {
+    &__number--light {
+        color: white;
+    }
+
+    &__number--accent {
+        color: $Blue;
+    }
+
+    &__scale {
         font-size: 1.2rem;
         line-height: 2.8rem;
-        opacity: 0.5;
         font-weight: 700;
+        color: $Dark-gray;
+        opacity: 0.5;
+    }
+
+    &__scale--light {
+        color: white;
+        opacity: 0.5;
     }
 }

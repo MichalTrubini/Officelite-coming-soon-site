@@ -497,6 +497,7 @@ p {
 
         width: 100%;
         max-width: 110rem;
+        margin-bottom: 43.8rem;
 
         &__content {
             width: 54rem;
@@ -519,6 +520,85 @@ p {
             font-size: 1.8rem;
             line-height: 2.8rem;
             margin-bottom: 3.2rem;
+        }
+    }
+
+    .offer-wrapper {
+        width: 110rem;
+        max-width: 110rem;
+    }
+
+    .cards {
+        display: flex;
+        margin-bottom: 8.2rem;
+
+        &__card {
+          width: 35rem;
+          margin-bottom: 0;
+          margin-right: 3rem;
+          text-align: center;
+          padding: 4rem;
+
+          .button {
+              margin: auto;
+          }
+        }
+
+        &__card:last-child {
+            margin-right: 0;
+        }
+
+        &__card-wrapper {
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            margin-bottom: 4rem;
+        }
+
+        &__heading {
+            margin-bottom: 0.8rem;
+        }
+
+        &__subtitle-two {
+            margin-bottom: 5.6rem;
+        }
+        &__list {
+            margin-bottom: 3.2rem;
+        }
+
+        &__list-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer {
+        height: 60.3rem;
+        background: url(../assets/home/bg-pattern-footer.svg) bottom  left no-repeat, #25293A;
+        background-size: 1600px;
+        background-position-y: -350px;
+        background-position-x: -510px;
+        max-width: 144rem;
+    }
+
+    .countdown {
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &__block {
+            width: 44.8rem;
+            margin-bottom: 0;
+        }
+
+        .button {
+            margin: 6.8rem 0 0 auto;
+        }
+
+        &__date {
+            text-align: left;
+            margin-bottom: 0;
         }
     }
 }

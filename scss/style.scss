@@ -343,8 +343,13 @@ p {
         background-position-x: 490px;
     }
 
+    .light-skin {
+        background: #FAFAFA;
+    }
+
     .main {
         padding: 7.2rem 3.9rem 0;
+        max-width: 768px;
         width: 100%;
     }
 
@@ -371,6 +376,17 @@ p {
         &__hero-image {
             width: 85%;
             margin-bottom: 0;
+        }
+
+        &__paragraph-md {
+            margin-bottom: 4rem;
+            max-width: 57.2rem;
+            text-align: center;
+        }
+
+        &__sign-up {
+            flex-direction: column;
+            margin-bottom: 31rem;
         }
     }
 
@@ -418,7 +434,7 @@ p {
     }
 
     .countdown {
-        max-width: 44.8rem;
+        width: 44.8rem;
         margin: auto;
         text-align: center;
 
@@ -449,5 +465,20 @@ p {
 
     .footer {
         height: 98.6rem;
+
+        &__secondary {
+            height: 38rem;
+        }
+    }
+
+    .sign-up {
+        &__container {
+            max-width: 44.5rem;
+            bottom: 160px;
+        }
+
+        .button {
+            margin: auto;
+        }
     }
 }

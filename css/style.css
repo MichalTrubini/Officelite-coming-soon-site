@@ -511,8 +511,12 @@ p {
     background-position-y: -123px;
     background-position-x: 490px;
   }
+  .light-skin {
+    background: #FAFAFA;
+  }
   .main {
     padding: 7.2rem 3.9rem 0;
+    max-width: 768px;
     width: 100%;
   }
   .header {
@@ -544,6 +548,18 @@ p {
   .intro__hero-image {
     width: 85%;
     margin-bottom: 0;
+  }
+  .intro__paragraph-md {
+    margin-bottom: 4rem;
+    max-width: 57.2rem;
+    text-align: center;
+  }
+  .intro__sign-up {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 31rem;
   }
   .offer-wrapper {
     max-width: 68.9rem;
@@ -581,7 +597,7 @@ p {
     margin: 0;
   }
   .countdown {
-    max-width: 44.8rem;
+    width: 44.8rem;
     margin: auto;
     text-align: center;
   }
@@ -606,6 +622,16 @@ p {
   }
   .footer {
     height: 98.6rem;
+  }
+  .footer__secondary {
+    height: 38rem;
+  }
+  .sign-up__container {
+    max-width: 44.5rem;
+    bottom: 160px;
+  }
+  .sign-up .button {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

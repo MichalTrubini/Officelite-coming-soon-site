@@ -507,11 +507,12 @@ p {
 
 @media screen and (min-width:1440px) {
     .main {
-        padding: 8.1rem 0 0 16.5rem;
+        padding-top: 8.1rem;
         max-width: 110rem;
         box-sizing: content-box;
 
         &__sign-up {
+            padding: 8.1rem 0 0 16.5rem;
             max-width: 102rem;
             width: 85rem;
         }

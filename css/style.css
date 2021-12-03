@@ -634,4 +634,36 @@ p {
     margin: auto;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding: 8.1rem 0 0;
+    max-width: 110rem;
+  }
+  .header {
+    margin-bottom: 10.2rem;
+  }
+  .intro {
+    width: 100%;
+    max-width: 110rem;
+  }
+  .intro__content {
+    width: 54rem;
+  }
+  .intro__hero {
+    width: 475px;
+  }
+  .intro__hero-image {
+    width: 47.5rem;
+  }
+  .intro__heading {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+  }
+  .intro__paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -351,6 +351,11 @@ p {
   background-position-y: -400px;
 }
 
+.countdown {
+  max-width: 32.8rem;
+  margin: auto;
+}
+
 .countdown__date {
   font-weight: 700;
   line-height: 4.8rem;
@@ -421,6 +426,8 @@ p {
   border-radius: 13px;
   padding: 2.4rem;
   background: #fff;
+  max-width: 32.8rem;
+  margin: auto;
 }
 
 .sign-up__container {
@@ -597,6 +604,7 @@ p {
     margin: 0;
   }
   .countdown {
+    max-width: 44.8rem;
     width: 44.8rem;
     margin: auto;
     text-align: center;
@@ -626,9 +634,13 @@ p {
   .footer__secondary {
     height: 38rem;
   }
+  .sign-up {
+    max-width: 44.5rem;
+  }
   .sign-up__container {
     max-width: 44.5rem;
     bottom: 160px;
+    padding: 0;
   }
   .sign-up .button {
     margin: auto;
@@ -637,8 +649,14 @@ p {
 
 @media screen and (min-width: 1440px) {
   .main {
-    padding: 8.1rem 0 0;
+    padding: 8.1rem 0 0 16.5rem;
     max-width: 110rem;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .main__sign-up {
+    max-width: 102rem;
+    width: 85rem;
   }
   .header {
     margin-bottom: 10.2rem;
@@ -665,6 +683,17 @@ p {
     font-size: 1.8rem;
     line-height: 2.8rem;
     margin-bottom: 3.2rem;
+  }
+  .intro__paragraph-md {
+    text-align: left;
+  }
+  .intro__sign-up {
+    margin-bottom: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 15.4rem;
+    max-width: 54rem;
   }
   .offer-wrapper {
     width: 110rem;
@@ -718,6 +747,15 @@ p {
     background-position-x: -510px;
     max-width: 144rem;
   }
+  .footer__secondary {
+    background: url(../assets/home/bg-pattern-footer.svg) no-repeat, #25293A;
+    background-size: 1600px;
+    background-position-y: -600px;
+    background-position-x: -550px;
+    min-height: 100vh;
+    height: 100vh;
+    width: 42rem;
+  }
   .countdown {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -737,6 +775,24 @@ p {
   .countdown__date {
     text-align: left;
     margin-bottom: 0;
+  }
+  .page-wrapper__sign-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 144rem;
+    margin: auto;
+  }
+  .sign-up__container {
+    right: 155px;
+    top: 35vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

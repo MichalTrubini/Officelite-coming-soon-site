@@ -15,7 +15,6 @@ p {
 }
 
 .header {
-    padding: 4.6rem 2.4rem 0;
     margin-bottom: 5rem;
 
     &__hero-image {
@@ -24,13 +23,20 @@ p {
     }
 }
 
-.main {
-    padding: 0 2.4rem;
-    bottom: -794px;
+.page-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.main {
+    padding: 4.6rem 2.4rem;
+}
+
 .intro {
 
-    margin-bottom: 10rem;
+    margin-bottom: 894px;
 
     &__heading {
         font-size: 4rem;
@@ -42,11 +48,11 @@ p {
     &__paragraph {
         color: $color-paragraph-dark;
         line-height: 2.6rem;
-        margin-bottom:2.4rem;
+        margin-bottom:6.4rem;
     }
 
     &__sign-up {
-        margin-bottom: 6.4rem;
+        margin-bottom: 29.6rem;
     }
 }
 
@@ -60,6 +66,7 @@ p {
     height: 56px;
     border-radius: 28px;
     margin: auto;
+    border:none;
 }
 
 .button:hover{
@@ -82,8 +89,19 @@ p {
     color:$Blue;
 }
 
+.offer-wrapper {
+    padding: 0 2.4rem;
+    max-width: 37.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10rem;
+}
+
 .cards {
 
+    margin-bottom: 10rem;
+    ;
     &__card {
         padding:4rem 0;
         border-radius: 13px;
@@ -143,15 +161,18 @@ p {
 }
 
 .footer {
-    position: absolute;
-    z-index: -1;
-    bottom:-440px;
+
     width: 100%;
     height: 1248px;
-    background:url(../assets/home/bg-pattern-footer.svg) center, $background-footer;
-    background-size: 1200px;
-    background-position-y: -1030px;
-    padding: 89.4rem 2.4rem 0;
+    background:url(../assets/home/bg-pattern-footer.svg) bottom no-repeat, $background-footer;
+    background-size: 1100px;
+    background-position-y: 220px;
+
+    &__secondary {
+        height: 32rem;
+        background-size: 1200px;
+        background-position-y: -400px;
+    }
 }
 
 .countdown {
@@ -216,3 +237,92 @@ p {
         opacity: 0.5;
     }
 }
+
+.sign-up {
+
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    padding: 2.4rem;
+    background: $background-card-light;
+
+    &__container {
+        position: absolute;
+        bottom: 90px;
+        padding:0 2.4rem;
+        width: 100%;
+    }
+
+    &__wrapper {
+        margin-bottom: 4rem;
+    }
+
+    &__input-wrapper {
+        position:relative;
+        margin-top: 2.4rem;;
+    }
+
+    &__arrow {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+    }
+
+    &__item {
+        display: block;
+        width: 100%;
+        background:transparent;
+        border: none;
+        border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+        color: $Dark-gray;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        padding:0 0 1.7rem 1.6rem;
+        margin-top:2.4rem;
+        text-align: left;
+    }
+
+    &__item:first-child{
+        margin-top: 0;
+    }
+
+    &__list-group {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        background: white;
+        opacity: 0;
+        text-align: left;
+        padding: 2.4rem 3.2rem;
+        border: 1px solid rgba(51, 57, 80, 0.153273);
+        box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.747077);
+        border-radius: 8px;
+        margin-top: 2.4rem;
+    }
+
+    &__list-group-item {
+        font-weight: 700;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        border-bottom: 1px solid rgba(116, 123, 149, 0.25);
+    }
+
+    &__list-group-item:first-child  {
+        padding-top: 0;  
+    }
+
+    &__list-group-item:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    &__opacity{
+        margin-left: 0.8rem;
+        opacity: 0.4;
+    }
+
+    &__bold {
+        font-weight: 700;
+    }
+}
+
+

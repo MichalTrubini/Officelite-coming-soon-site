@@ -13,55 +13,78 @@
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__site-logo-wrapper">
-      <img src="assets/shared/logo.svg" alt="officelite" class="header__site-logo">
+  <div class="page-wrapper">
+    <main class="main">
+      <header class="header">
+        <div class="header__site-logo-wrapper">
+          <img src="assets/shared/logo.svg" alt="officelite" class="header__site-logo">
+        </div>
+      </header>
+      <section class="intro intro__sign-up">
+        <h1 class="intro__heading">
+          Work smarter. Save time.
+        </h1>
+        <p class="intro__paragraph">
+          Easily manage your projects. Get on the list and receive in-app perks available only to 
+          early subscribers. We are moving into final development and getting ready for official launch soon.
+        </p>
+        <div class="countdown">
+          <p class="countdown__date">Coming <span class="countdown__date--accent">4 Nov 2020</span></p>
+          <div class="countdown__block">
+            <div class="countdown__wrapper countdown__wrapper--light">
+              <h3 class="countdown__number countdown__number--accent">47</h3>
+              <p class="countdown__scale">days</p>
+            </div>
+            <div class="countdown__wrapper countdown__wrapper--light">
+              <h3 class="countdown__number countdown__number--accent">07</h3>
+              <p class="countdown__scale">hours</p>
+            </div>
+            <div class="countdown__wrapper countdown__wrapper--light">
+              <h3 class="countdown__number countdown__number--accent">56</h3>
+              <p class="countdown__scale">min</p>
+            </div>
+            <div class="countdown__wrapper countdown__wrapper--light">
+              <h3 class="countdown__number countdown__number--accent">14</h3>
+              <p class="countdown__scale">sec</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer__secondary"></footer>
+    <div class="sign-up__container">
+      <form class="sign-up">
+        <div class="sign-up__wrapper">
+          <input type="text" class="sign-up__item" placeholder="Name">
+          <input type="email" class="sign-up__item" placeholder="Email Address">
+          <div class="sign-up__input-wrapper">
+            <div class="sign-up__item">
+              <span class="sign-up__bold">Basic Pack</span><span class="sign-up__opacity">Free</span>
+            </div>
+            <img src="assets/sign-up/icon-arrow-down.svg" alt="arrow" class="sign-up__arrow">
+            <div class="sign-up__list-group hide">
+              <p href="#" class="sign-up__list-group-item">
+                Basic Pack<span class="sign-up__opacity">Free</span>
+              </p>
+              <p href="#" class="sign-up__list-group-item">
+                Pro Pack<span class="sign-up__opacity">$9.99</span>
+              </p>
+              <p href="#" class="sign-up__list-group-item">
+                Ultimate Pack<span class="sign-up__opacity">$19.99</span>
+              </p>
+            </div>
+          </div>
+          <input type="number" class="sign-up__item" placeholder="Phone Number">
+          <input type="text" class="sign-up__item" placeholder="Company">
+        </div>
+        <button class="button button--primary">Get on the list</button>
+      </form>
     </div>
-  </header>
-  <main class="main">
-    <section class="intro intro__sign-up">
-      <h1 class="intro__heading">
-        Work smarter. Save time.
-      </h1>
-      <p class="intro__paragraph">
-        Easily manage your projects. Get on the list and receive in-app perks available only to 
-        early subscribers. We are moving into final development and getting ready for official launch soon.
-      </p>
-    </section>
-    <div class="countdown">
-      <p class="countdown__date">Coming <span class="countdown__date--accent">4 Nov 2020</span></p>
-      <div class="countdown__block">
-        <div class="countdown__wrapper countdown__wrapper--light">
-          <h3 class="countdown__number countdown__number--accent">47</h3>
-          <p class="countdown__scale">days</p>
-        </div>
-        <div class="countdown__wrapper countdown__wrapper--light">
-          <h3 class="countdown__number countdown__number--accent">07</h3>
-          <p class="countdown__scale">hours</p>
-        </div>
-        <div class="countdown__wrapper countdown__wrapper--light">
-          <h3 class="countdown__number countdown__number--accent">56</h3>
-          <p class="countdown__scale">min</p>
-        </div>
-        <div class="countdown__wrapper countdown__wrapper--light">
-          <h3 class="countdown__number countdown__number--accent">14</h3>
-          <p class="countdown__scale">sec</p>
-        </div>
-      </div>
-  </main>
+  </div>
 
   <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
 
   <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
 </body>
 </html>

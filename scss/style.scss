@@ -15,12 +15,7 @@ p {
 }
 
 .header {
-    margin-bottom: 5rem;
-
-    &__hero-image {
-        width: 52.3%;
-        margin-top: 8rem;
-    }
+    margin-bottom: 8rem;
 }
 
 .page-wrapper {
@@ -31,12 +26,17 @@ p {
 }
 
 .main {
-    padding: 4.6rem 2.4rem;
+    padding: 4.6rem 2.4rem 0;
 }
 
 .intro {
+    max-width: 46.5rem;
+    margin: 0 auto 894px;
 
-    margin-bottom: 894px;
+    &__hero-image {
+        width: 52.3%;
+        margin-bottom: 4.4rem;
+    }
 
     &__heading {
         font-size: 4rem;
@@ -48,6 +48,13 @@ p {
     &__paragraph {
         color: $color-paragraph-dark;
         line-height: 2.6rem;
+    }
+
+    &__paragraph-sm {
+        margin-bottom:2.4rem;
+    }
+
+    &__paragraph-md {
         margin-bottom:6.4rem;
     }
 
@@ -67,6 +74,7 @@ p {
     border-radius: 28px;
     margin: auto;
     border:none;
+    text-align: center;
 }
 
 .button:hover{
@@ -325,4 +333,121 @@ p {
     }
 }
 
+@media screen and (min-width:768px) {
 
+    body {
+        text-align: left;
+        background:url(../assets/home/bg-pattern-header.svg) no-repeat right top/contain, $background-body;
+        background-size: 500px;
+        background-position-y: -123px;
+        background-position-x: 490px;
+    }
+
+    .main {
+        padding: 7.2rem 3.9rem 0;
+        width: 100%;
+    }
+
+    .header {
+        margin-bottom: 10.4rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 63.8rem;
+        max-width: 68.9rem;
+
+        &__content {
+            width: 75%;
+        }
+
+        &__hero {
+            text-align: right;
+        }
+
+        &__hero-image {
+            width: 85%;
+            margin-bottom: 0;
+        }
+    }
+
+    .offer-wrapper {
+        max-width: 68.9rem;
+        padding: 0;
+    }
+
+    .cards {
+
+        &__card {
+            padding: 4.8rem 6.8rem 4.8rem 4.8rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &__card:last-child {
+            margin-bottom: 0;
+        }
+
+        &__list {
+            margin-bottom:0;
+            margin-top: auto;
+        }
+
+        &__card-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__subtitle {
+            margin-bottom: 1.6rem;
+        }
+
+        &__subtitle-two {
+            margin-bottom: 2.4rem;
+        }
+
+        &__heading {
+            margin-bottom: 0.4rem;
+        }
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .countdown {
+        max-width: 44.8rem;
+        margin: auto;
+        text-align: center;
+
+        &__wrapper {
+            width: 10rem;
+            height: 12.8rem;
+            padding: 1.6rem 0 1.3rem;
+            border-radius: 13px;
+        }
+
+        &__number {
+            font-size: 5.6rem;
+            line-height: 6.4rem;
+        }
+
+        &__scale {
+            font-size: 1.6rem;
+        }
+
+        &__block {
+            margin-bottom: 4.8rem;
+        }
+
+        > .button {
+            margin: auto;
+        }
+    }
+
+    .footer {
+        height: 98.6rem;
+    }
+}

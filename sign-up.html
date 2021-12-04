@@ -59,11 +59,17 @@
     <div class="sign-up__container">
       <form class="sign-up">
         <div class="sign-up__wrapper">
-          <input type="text" class="sign-up__item" placeholder="Name">
-          <input type="email" class="sign-up__item" placeholder="Email Address">
+          <div class="sign-up__input-wrapper">
+            <input type="text" class="sign-up__item" placeholder="Name" pattern="[a-zA-Z0-9À-ž_ ]*$" required>
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+          </div>
+          <div class="sign-up__input-wrapper">
+            <input type="email" class="sign-up__item" placeholder="Email Address" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required>
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+          </div>
           <div class="sign-up__input-wrapper">
             <div class="sign-up__item" id="select-option">
-              <span class="sign-up__package-name">Select option</span><span class="sign-up__package-price"></span>
+              <span class="sign-up__package-name">Basic Pack</span><span class="sign-up__package-price">Free</span>
             </div>
             <img src="assets/sign-up/icon-arrow-down.svg" alt="arrow" class="sign-up__arrow">
             <div class="sign-up__list-group">
@@ -71,7 +77,7 @@
                 <p href="#" class="sign-up__list-group-item">
                   <span class="sign-up__package-name">Basic Pack</span><span class="sign-up__package-price">Free</span>
                 </p>
-                <img src="assets/sign-up/icon-check.svg" alt="checkmark" class="sign-up__list-group-checkmark" data-selected="1">
+                <img src="assets/sign-up/icon-check.svg" alt="checkmark" class="sign-up__list-group-checkmark show-element" data-selected="1">
               </div>
               <div class="sign-up__list-group-item-wrapper">
                 <p href="#" class="sign-up__list-group-item">
@@ -87,10 +93,16 @@
               </div>
             </div>
           </div>
-          <input type="number" class="sign-up__item" placeholder="Phone Number">
-          <input type="text" class="sign-up__item" placeholder="Company">
+          <div class="sign-up__input-wrapper">
+            <input type="number" class="sign-up__item" placeholder="Phone Number" required>
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+          </div>
+          <div class="sign-up__input-wrapper">
+            <input type="text" class="sign-up__item" placeholder="Company" pattern="[a-zA-Z0-9À-ž_ ]*$" required>
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+          </div>
         </div>
-        <button class="button button--primary">Get on the list</button>
+        <button class="button button--primary" id="submit-form">Get on the list</button>
       </form>
     </div>
   </div>

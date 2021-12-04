@@ -496,6 +496,7 @@ p {
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
   opacity: 0;
+  pointer-events: none;
   text-align: left;
   padding: 2.4rem 3.2rem;
   border: 1px solid rgba(51, 57, 80, 0.153273);
@@ -544,6 +545,19 @@ p {
 
 .sign-up__package-name {
   font-weight: 700;
+}
+
+.sign-up__input-wrapper {
+  position: relative;
+}
+
+.sign-up__error {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -841,6 +855,7 @@ p {
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
   opacity: 1;
+  pointer-events: visible;
 }
 
 .arrow-up {

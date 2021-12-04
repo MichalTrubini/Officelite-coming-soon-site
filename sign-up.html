@@ -60,12 +60,12 @@
       <form class="sign-up">
         <div class="sign-up__wrapper">
           <div class="sign-up__input-wrapper">
-            <input type="text" class="sign-up__item" placeholder="Name" pattern="[a-zA-Z0-9À-ž_ ]*$" required>
-            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+            <input type="text" class="sign-up__item" placeholder="Name" pattern="[a-zA-Z0-9À-ž_ ]*$" required data-input="1">
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error" data-input="1">
           </div>
           <div class="sign-up__input-wrapper">
-            <input type="email" class="sign-up__item" placeholder="Email Address" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required>
-            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+            <input type="email" class="sign-up__item" placeholder="Email Address" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required data-input="2">
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error" data-input="2">
           </div>
           <div class="sign-up__input-wrapper">
             <div class="sign-up__item" id="select-option">
@@ -94,12 +94,12 @@
             </div>
           </div>
           <div class="sign-up__input-wrapper">
-            <input type="number" class="sign-up__item" placeholder="Phone Number" required>
-            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+            <input type="number" class="sign-up__item" placeholder="Phone Number" required data-input="3">
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error" data-input="3">
           </div>
           <div class="sign-up__input-wrapper">
-            <input type="text" class="sign-up__item" placeholder="Company" pattern="[a-zA-Z0-9À-ž_ ]*$" required>
-            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error">
+            <input type="text" class="sign-up__item" placeholder="Company" pattern="[a-zA-Z0-9À-ž_ ]*$" required data-input="4">
+            <img src="assets/sign-up/icon-cross.svg" alt="error" class="sign-up__error" data-input="4">
           </div>
         </div>
         <button class="button button--primary" id="submit-form">Get on the list</button>
@@ -111,5 +111,7 @@
 
   <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
   <script src="js/script.js"></script>
+  <script src="js/menuToggle.js"></script>
+  <script src="js/validation.js"></script>
 </body>
 </html>

@@ -299,6 +299,7 @@ p {
         width: 100%;
         background:transparent;
         border: none;
+        outline: none;
         border-bottom: 1px solid rgba(116, 123, 149, 0.5);
         color: $Dark-gray;
         font-size: 1.6rem;
@@ -711,8 +712,25 @@ p {
     transform: rotate(-180deg);
 }
 
+.input-error {
+    border-bottom: 1px solid #F05B5B;
+    color: #F05B5B;
+}
+
 //ACTIVE STATES
 
 #select-option:hover, .sign-up__list-group-item:hover {
     cursor: pointer;
+}
+
+//INPUT NUMBER SPIN ARROWS REMOVE
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }

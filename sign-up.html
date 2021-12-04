@@ -35,19 +35,19 @@
             <p class="countdown__date">Coming <span class="countdown__date--accent">4 Nov 2020</span></p>
             <div class="countdown__block">
               <div class="countdown__wrapper countdown__wrapper--light">
-                <h3 class="countdown__number countdown__number--accent">47</h3>
+                <h3 id="remainder-days" class="countdown__number countdown__number--accent">30</h3>
                 <p class="countdown__scale">days</p>
               </div>
               <div class="countdown__wrapper countdown__wrapper--light">
-                <h3 class="countdown__number countdown__number--accent">07</h3>
+                <h3 id="remainder-hours" class="countdown__number countdown__number--accent">00</h3>
                 <p class="countdown__scale">hours</p>
               </div>
               <div class="countdown__wrapper countdown__wrapper--light">
-                <h3 class="countdown__number countdown__number--accent">56</h3>
+                <h3 id="remainder-minutes" class="countdown__number countdown__number--accent">00</h3>
                 <p class="countdown__scale">min</p>
               </div>
               <div class="countdown__wrapper countdown__wrapper--light">
-                <h3 class="countdown__number countdown__number--accent">14</h3>
+                <h3 id="remainder-seconds" class="countdown__number countdown__number--accent">00</h3>
                 <p class="countdown__scale">sec</p>
               </div>
             </div>
@@ -62,20 +62,29 @@
           <input type="text" class="sign-up__item" placeholder="Name">
           <input type="email" class="sign-up__item" placeholder="Email Address">
           <div class="sign-up__input-wrapper">
-            <div class="sign-up__item">
-              <span class="sign-up__bold">Basic Pack</span><span class="sign-up__opacity">Free</span>
+            <div class="sign-up__item" id="select-option">
+              <span class="sign-up__package-name">Select option</span><span class="sign-up__package-price"></span>
             </div>
             <img src="assets/sign-up/icon-arrow-down.svg" alt="arrow" class="sign-up__arrow">
-            <div class="sign-up__list-group hide">
-              <p href="#" class="sign-up__list-group-item">
-                Basic Pack<span class="sign-up__opacity">Free</span>
-              </p>
-              <p href="#" class="sign-up__list-group-item">
-                Pro Pack<span class="sign-up__opacity">$9.99</span>
-              </p>
-              <p href="#" class="sign-up__list-group-item">
-                Ultimate Pack<span class="sign-up__opacity">$19.99</span>
-              </p>
+            <div class="sign-up__list-group">
+              <div class="sign-up__list-group-item-wrapper">
+                <p href="#" class="sign-up__list-group-item">
+                  <span class="sign-up__package-name">Basic Pack</span><span class="sign-up__package-price">Free</span>
+                </p>
+                <img src="assets/sign-up/icon-check.svg" alt="checkmark" class="sign-up__list-group-checkmark" data-selected="1">
+              </div>
+              <div class="sign-up__list-group-item-wrapper">
+                <p href="#" class="sign-up__list-group-item">
+                  <span class="sign-up__package-name">Pro Pack</span><span class="sign-up__package-price">$9.99</span>
+                </p>
+                <img src="assets/sign-up/icon-check.svg" alt="checkmark" class="sign-up__list-group-checkmark" data-selected="2">
+              </div>
+              <div class="sign-up__list-group-item-wrapper">
+                <p href="#" class="sign-up__list-group-item">
+                  <span class="sign-up__package-name">Ultimate Pack</span><span class="sign-up__package-price">$19.99</span>
+                </p>
+                <img src="assets/sign-up/icon-check.svg" alt="checkmark" class="sign-up__list-group-checkmark" data-selected="3">
+              </div>
             </div>
           </div>
           <input type="number" class="sign-up__item" placeholder="Phone Number">

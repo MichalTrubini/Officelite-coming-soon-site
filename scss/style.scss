@@ -290,6 +290,8 @@ p {
         position: absolute;
         right: 15px;
         top: 12px;
+        transition: transform 300ms;
+        transform: rotate(0deg);
     }
 
     &__item {
@@ -315,6 +317,7 @@ p {
         width: 100%;
         z-index: 10;
         background: white;
+        transition: opacity 300ms;
         opacity: 0;
         text-align: left;
         padding: 2.4rem 3.2rem;
@@ -324,28 +327,37 @@ p {
         margin-top: 2.4rem;
     }
 
-    &__list-group-item {
+    &__list-group-item-wrapper {
+        border-bottom: 1px solid rgba(116, 123, 149, 0.25);
         font-weight: 700;
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
-        border-bottom: 1px solid rgba(116, 123, 149, 0.25);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__list-group-item:first-child  {
-        padding-top: 0;  
-    }
-
-    &__list-group-item:last-child {
-        padding-bottom: 0;
+    &__list-group-item-wrapper:last-child {
         border-bottom: none;
+        padding-bottom: 0;
     }
 
-    &__opacity{
+    &__list-group-item-wrapper:first-child {
+        padding-top: 0;
+    }
+
+    &__list-group-checkmark {
+        margin-right: 0.5rem;
+        transition: opacity 300ms;
+        opacity: 0;
+    }
+
+    &__package-price{
         margin-left: 0.8rem;
         opacity: 0.4;
     }
 
-    &__bold {
+    &__package-name {
         font-weight: 700;
     }
 }
@@ -670,4 +682,23 @@ p {
             top: 26vh;
         }
     }
+}
+
+
+//CLASSES FOR JAVASCRIPT
+
+.show-element {
+    transition: opacity 300ms;
+    opacity: 1;
+}
+
+.arrow-up {
+    transition: transform 300ms;
+    transform: rotate(-180deg);
+}
+
+//ACTIVE STATES
+
+#select-option:hover, .sign-up__list-group-item:hover {
+    cursor: pointer;
 }

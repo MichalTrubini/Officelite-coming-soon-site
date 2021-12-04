@@ -462,6 +462,12 @@ p {
   position: absolute;
   right: 15px;
   top: 12px;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .sign-up__item {
@@ -487,6 +493,8 @@ p {
   width: 100%;
   z-index: 10;
   background: white;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
   opacity: 0;
   text-align: left;
   padding: 2.4rem 3.2rem;
@@ -497,28 +505,44 @@ p {
   margin-top: 2.4rem;
 }
 
-.sign-up__list-group-item {
+.sign-up__list-group-item-wrapper {
+  border-bottom: 1px solid rgba(116, 123, 149, 0.25);
   font-weight: 700;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
-  border-bottom: 1px solid rgba(116, 123, 149, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sign-up__list-group-item:first-child {
+.sign-up__list-group-item-wrapper:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sign-up__list-group-item-wrapper:first-child {
   padding-top: 0;
 }
 
-.sign-up__list-group-item:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
+.sign-up__list-group-checkmark {
+  margin-right: 0.5rem;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  opacity: 0;
 }
 
-.sign-up__opacity {
+.sign-up__package-price {
   margin-left: 0.8rem;
   opacity: 0.4;
 }
 
-.sign-up__bold {
+.sign-up__package-name {
   font-weight: 700;
 }
 
@@ -811,5 +835,24 @@ p {
     right: 155px;
     top: 26vh;
   }
+}
+
+.show-element {
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  opacity: 1;
+}
+
+.arrow-up {
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+#select-option:hover, .sign-up__list-group-item:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
